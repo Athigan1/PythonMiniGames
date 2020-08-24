@@ -49,10 +49,9 @@ def play():
         if decision.lower() == "yes":
             play()
         elif decision.lower() == "no":
-            print("Thank you for playing rock-paper-scissors!")
             exit(1)
         else:
-            decision = input("Invalid answer! Please try again. \nWould you like to play again? [Yes/No]")
+            decision = input("Invalid answer! Please try again.\nWould you like to play again? [Yes/No]")
 
 
 play()
