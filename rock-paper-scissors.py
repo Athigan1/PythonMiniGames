@@ -1,3 +1,5 @@
+############## ROCK-PAPER-SCISSORS GAME BY ATHIGAN SINNATHURAI ###################
+
 import random
 
 print("Let's play rock-paper-scissors! First to 3 wins!")
