@@ -1,5 +1,4 @@
 ############## ROCK-PAPER-SCISSORS GAME BY ATHIGAN SINNATHURAI ###################
-
 import random
 
 print("Let's play rock-paper-scissors! First to 3 wins!")
@@ -7,9 +6,9 @@ print("Let's play rock-paper-scissors! First to 3 wins!")
 
 def play():
     options = ["rock", "paper", "scissors"]
-    yourScore = 0
-    computerScore = 0
-    while yourScore < 3 and computerScore < 3:
+    your_score = 0
+    computer_score = 0
+    while your_score < 3 and computer_score < 3:
         selection = input("Choose: rock, paper, scissors?\n\n")
         computer = random.choice(options)
 
@@ -18,31 +17,31 @@ def play():
         elif selection.lower() == "paper":
             if computer == "rock":
                 print("Win! Paper beats rock!")
-                yourScore += 1
+                your_score += 1
             else:
                 print("Lose: Scissors beat paper")
-                computerScore += 1
+                computer_score += 1
         elif selection.lower() == "rock":
             if computer == "scissors":
                 print("Win! Rock beats scissors")
-                yourScore += 1
+                your_score += 1
             else:
                 print("Lose: Paper beat rock")
-                computerScore += 1
+                computer_score += 1
         elif selection.lower() == "scissors":
             if computer == "paper":
                 print("Win! Scissors beat paper")
-                yourScore += 1
+                your_score += 1
             else:
                 print("Lose: Rock beats scissors")
-                computerScore += 1
+                computer_score += 1
         else:
             print("Invalid input")
 
-    if yourScore > computerScore:
-        print(f"Congratulation! You win the game by a score of {yourScore} to {computerScore}!")
+    if your_score > computer_score:
+        print(f"Congratulation! You win the game by a score of {your_score} to {computer_score}!")
     else:
-        print(f"The computer wins the game by a score of {computerScore} to {yourScore}")
+        print(f"The computer wins the game by a score of {computer_score} to {your_score}")
 
     decision = input("Would you like to play again? [Yes/No]")
 
@@ -51,8 +50,9 @@ def play():
             play()
         elif decision.lower() == "no":
             print("Thank you for playing rock-paper-scissors!")
-            break
+            exit(1)
         else:
             decision = input("Invalid answer! Please try again. \nWould you like to play again? [Yes/No]")
+
 
 play()
