@@ -1,4 +1,4 @@
-# SNAKE GAME BY ATHIGAN SINNATHURAI
+# PING PONG GAME BY ATHIGAN SINNATHURAI
 import turtle
 
 wn = turtle.Screen()
